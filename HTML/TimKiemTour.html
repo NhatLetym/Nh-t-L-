@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm kiếm sản phẩm</title>
+    <link rel="stylesheet" href="../CSS/tour.css"/>
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/TaoSanPham.js"></script>
+    <script src="../JS/TourThem.js"></script>
+</head>
+<body>
+    <div id="TimKiem">
+        <input type="text" id="idtour" placeholder="Nhập ID tour">
+        <button onclick="onclickTimKiemTour()" class="btn-Tim">Tìm kiếm</button>
+    </div>
+    <div id="KetQuaTimKiem">
+
+    </div>
+    
+    <script>
+        //Tìm kiếm id
+        function onclickTimKiemTour(){
+            //bước 1: truy xuất node idtour để lấy ra idtour
+            // var nodeidTour = document.getElementById('idtour');
+            // var idTour = nodeidTour.value;
+            // console.log('Id tour là: '+idTour);
+            
+            
+            //bước 2: truy xuất đối tượng theo id
+            var Tour = truyxuatTourtheoID(idTour);
+            console.log(Tour);
+
+            //bước 3: chuyển đối tượng sang HTML
+            var HTML = ChuyenDoiTuongSanPhamThanhHTML(Tour);
+
+            //bước 4: hiển thị HTML ra node kết quả tìm kiếm
+            var nodeketquatimkiem = document.getElementById('KetQuaTimKiem');
+            nodeketquatimkiem.innerHTML = HTML;
+        }
+        //input: id
+        //output: đối tượng có id = id
+        function truyxuatTourtheoID(id){
+            //Bước 1: lấy tên danh sách toàn bộ đối tượng 
+            var jsondanhsachtour = localStorage.getItem('danhsachTour');
+            var danhsachTour = JSON.parse(jsondanhsachtour);
+            
+            //bước 2: duyệt toàn bộ đối tượng, kiểm tra xem id của đối tượng có bằng với id truyền vào không
+            for(var i = 0; i< danhsachTour.length; i++){
+                var tourhientai = danhsachTour[i];
+                if(tourhientai.id == id){
+                    return tourhientai;
+                }
+            }
+        }
+
+
+
+    </script>
+        
+</body>
+</html>

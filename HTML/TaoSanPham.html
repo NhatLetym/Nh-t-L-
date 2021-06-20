@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm sản phẩm</title>
+    <link rel="stylesheet" href="../CSS/TaoSanPham.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/TaoSanPham.js"></script>
+    <script src="../JS/TourThem.js"></script>
+</head>
+
+<body>
+    <div class="them-moi-san-pham">
+        <h2 st align="center">Tạo Sản Phẩm mới</h2><br/>
+        <label for="HinhAnh">Hình ảnh sản phẩm</label><br/>
+        <input id="HinhAnh" class="form-control" type="text"><br/>
+
+        <label for="Ten">Tên sản phẩm</label><br/>
+        <input type="text" id="Ten"><br/>
+
+        <label for="GiaGoc">Giá gốc</label><br/>
+        <input type="number" id="GiaGoc"><br/>
+
+        <label for="PhanTramGiamGia">Giảm giá (%) -Giá trị từ 0-1 </label><br/>
+        <input type="number" id="PhanTramGiamGia"><br/>
+
+        <label for="KhoiHanh">Khởi Hành</label><br/>
+        <input type="text" id="KhoiHanh"><br/>
+
+        <label for="ThoiGian">Thời gian đi(mấy ngày mấy đêm?)</label><br/>
+        <input type="text" id="ThoiGian"><br/>
+
+        <button onclick="onclickTaoSanPham()">Tạo sản phẩm</button>
+    </div>
+
+</body>
+</html>

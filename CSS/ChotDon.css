@@ -1,0 +1,286 @@
+.main{
+	width: 100%;
+	height: 400px;
+}
+
+.container{	
+	width: 100%;
+	min-width: 600px;
+}
+.menu{
+    height: 40px;
+	width: 100%;
+	margin: auto;
+}
+
+
+.menu ul{
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+}
+
+.menu ul li{
+	float: left;
+	line-height: 40px;
+	position: relative;
+}
+
+.menu ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 0px 20px;
+}
+
+.menu ul li a:hover{
+	background-color:#CCC;	
+
+}
+
+.menu ul ul{
+	width: 250px;
+	background-color: white;
+	display: none;
+}
+
+.menu ul li:hover ul{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 40px;
+	left: 0px;
+}
+
+.menu li li{
+	float: none;
+}
+
+.menu li li a{
+	color: black;
+}
+
+.menu li li a:hover{
+	color: #EEE;
+}
+
+.loign{
+	height:30px;
+	width:100px; 
+	border:2px solid #1877f2; 
+	border-radius: 10px;
+	margin-top: 5px; 
+	margin-left: 100px;
+	background-color: white;
+
+}
+
+.loign:hover{
+	background-color: #DDD;
+}
+
+.cart-icon{
+	width: 32px;
+	position: absolute;
+	cursor: pointer;
+	border: 1px solid;
+	margin-top: 10px;
+
+}
+
+.status{
+    width: 100%;
+    height: 60px;
+    background-color: #DDD;
+    float: left;
+}
+
+.status span{
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    font-size: 18px;
+    
+}
+
+.item-1{
+    color: black;
+}
+.item-1 svg{
+    color: black;
+}
+
+.item-2{
+    color: red;
+}
+
+.mess{
+    width: 100%;
+    height: 300px;
+    font-size: 17px;
+    float: left;
+    padding: 30px 0px 0px 80px;
+
+}
+
+.info{
+    width: 900px;
+    height: 60px;
+    border: 1px solid #CCC;
+    color: rgb(21, 194, 21);
+    padding-left: 40px ;
+    padding-top: 15px;
+}
+
+.footer{
+	min-height: 300px;
+	width: 100%;
+	background-color: #DDD;
+	float: left;
+}
+
+.communications, .visa-service{
+	width: 100%;
+	min-height: 150px;
+}
+
+.communications label{
+	color: red;
+}
+
+.communications b, .visa-service b, .Contact-Info b{
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.communications li, .visa-service li, .Contact-Info li{
+	line-height: 25px;
+	list-style: none;
+} 
+
+.visa-service label{
+	color: red;
+	font-size: 19px;
+	font-weight: 700;
+}
+
+.Contact-Info, .link{
+	width: 100%;
+	height: 80px;
+}
+
+.Contact-Info a, .link a{
+	width: 15%;
+	height: 30px;
+	float: left;
+}
+
+.Contact-Info img{
+	width: 95%;
+	height: 100%;
+	float: left;
+}
+
+.link li{
+	list-style: none
+}
+
+.btn{
+	height: 40px;
+	width: 40px;
+	margin-top: 30px;
+	border-radius: 100%;
+	margin-left: 10px;
+	margin-top: 20px;
+	
+}
+.btn:hover{
+	box-shadow: 0px 0px 5px 5px #CCC;
+}
+
+.btn:hover{
+	box-shadow: 0px 0px 5px 5px #CCC;
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+[class*="col-"]{
+	float: left;
+	padding: 15px;
+	
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* For mobile*/
+@media only screen and (max-width: 768px){	
+	.col-s-1{width: 8.33%;}
+	.col-s-2{width: 16.66%;}
+	.col-s-3{width: 25%;}
+	.col-s-4{width: 33.33%;}
+	.col-s-5{width: 41.66%;}
+	.col-s-6{width: 50%;}
+	.col-s-7{width: 58.33%;}
+	.col-s-8{width: 66.66%;}
+	.col-s-9{width: 75%;}
+	.col-s-10{width: 83.33%;}
+	.col-s-11{width: 91.66%;}
+	.col-s-12{width: 100%;}	
+	
+	#menu{
+		display: none;
+	}
+}
+
+/* For medium devices*/
+@media only screen and (min-width: 768px){	
+	.col-m-1{width: 8.33%;}
+	.col-m-2{width: 16.66%;}
+	.col-m-3{width: 25%;}
+	.col-m-4{width: 33.33%;}
+	.col-m-5{width: 41.66%;}
+	.col-m-6{width: 50%;}
+	.col-m-7{width: 58.33%;}
+	.col-m-8{width: 66.66%;}
+	.col-m-9{width: 75%;}
+	.col-m-10{width: 83.33%;}
+	.col-m-11{width: 91.66%;}
+	.col-m-12{width: 100%;}	
+	
+	#menu{
+		display: none;
+	}
+}
+
+/* For large devices*/
+@media only screen and (min-width: 992px){	
+	.col-1{width: 8.33%;}
+	.col-2{width: 16.66%;}
+	.col-3{width: 25%;}
+	.col-4{width: 33.33%;}
+	.col-5{width: 41.66%;}
+	.col-6{width: 50%;}
+	.col-7{width: 58.33%;}
+	.col-8{width: 66.66%;}
+	.col-9{width: 75%;}
+	.col-10{width: 83.33%;}
+	.col-11{width: 91.66%;}
+	.col-12{width: 100%;}	
+	
+	#menu{
+
+		display: block;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,550 @@
+
+#header{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+}
+
+
+
+#main{
+    width: 100%;
+    min-height: 1700px;
+    position: relative;
+}
+
+
+.container{
+	
+	width: 100%;
+	min-width: 600px;
+}
+.menu{
+    height: 40px;
+	width: 100%;
+	margin: auto;
+	min-width: 600px;	
+}
+
+
+.menu ul{
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+}
+
+.menu ul li{
+	float: left;
+	line-height: 40px;
+	position: relative;
+}
+
+.menu ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 0px 20px;
+}
+
+.menu ul li a:hover{
+	background-color:#CCC;	
+
+}
+
+.menu ul ul{
+	width: 250px;
+	background-color: white;
+	display: none;
+}
+
+.menu ul li:hover ul{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 40px;
+	left: 0px;
+}
+
+.menu li li{
+	float: none;
+}
+
+.menu li li a{
+	color: black;
+}
+
+.menu li li a:hover{
+	color: #EEE;
+}
+
+.loign{
+	height:30px;
+	width:100px; 
+	border:2px solid #1877f2; 
+	border-radius: 10px;
+	margin-top: 5px; 
+	margin-left: 100px;
+	background-color: white;
+
+}
+
+.loign:hover{
+	background-color: #DDD;
+}
+
+.cart-icon{
+	width: 32px;
+	position: absolute;
+	cursor: pointer;
+	border: 1px solid;
+	margin-top: 10px;
+
+}
+
+.photo{
+	height: 140px;
+	width: 100%;   
+    background-color: #CCC;
+	float: left;
+}
+
+.avatar{
+	height: 110px;
+	background-color:white;
+	width: 90%;	
+	float: left;
+	bottom: 50px;
+	left: 50px;
+	z-index: 777;
+	margin: 20px 10px 5px 20px;
+}
+.search{
+    height: 110px;
+	width: 100%;
+	
+	border-right: 1px solid #CCC;
+	/*margin: auto;
+	bottom:10px;
+	right:15px;*/
+	float: left;
+	
+}
+
+b{
+	margin: 20px;
+	width: 500px;
+
+}
+.voucher{
+	height: 500px;
+	width: 100%;
+	float: left;
+	
+
+	
+}
+#imgs{
+	height: 500px;
+	width: 100%;
+	
+}
+
+.form-control{
+    height: 33px;
+	width: 400px;
+	padding: 10px;
+	margin: 10px 0px 25px 25px;
+
+}
+
+.rows{
+	
+	width: 550px;
+	margin: 10px 0px 25px 20px;
+	float: left;
+
+}
+
+.rows-1, .rows-2, .rows-3{
+	height: 35px;
+	width: 120px;
+	float: left;	
+}
+
+.row-select{
+	height: 32px;
+	width: 100px;
+	float: left;
+	
+}
+
+.rows-4{
+	height: 35px;
+	width: 110px;
+	float: left;
+}
+
+.button-search{
+	height:32px;
+	width:100px;
+	background-color:rgb(233, 48, 48);
+	color:#FFF;
+	float: left;
+}
+
+
+.place{
+	height: 110px;
+	width: 100%;	
+	float: left;
+}
+
+
+.content{
+	height: 200px;
+	width: 100%;
+}
+
+
+#chi-tiet{
+    max-width:1175px ;
+    min-height: 500px;
+    margin: auto;
+}
+
+.ct{
+    float: left; 
+    width: 100%;
+    min-height: 500px;
+}
+
+.gioi-thieu{
+    width: 100%;
+    min-height: 500px;
+    float: left;
+    margin-right: 15px;
+}
+
+.a{
+    width: 100%;
+    height:530px ;
+}
+
+.anh{
+    width: 100%;
+    max-height: 469px;
+}
+
+.lich-trinh-gt{
+    width: 100%;
+    min-height: 40px;
+    border-bottom:  3px solid black;
+
+}
+
+.lich-trinh-gt-ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.lich-trinh-gt-li{
+    float: left;
+    min-height: 38px;
+    padding-right: 15px;
+    padding-top: 13px;
+    padding-left: 15px;
+}
+
+.lich-trinh-gt-li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#lich-trinh-1{
+    background-color: red;
+}
+
+.thong-tin{
+    width: 100%;
+	min-height: 800px;
+    float: left;
+    
+}
+
+#positon{
+    width: 100%;
+    min-height: 650px;
+    float: left;
+	text-align:justify;/*canh chữ không bị thò thụt*/
+}
+
+#photo-info{
+    width: 100%;
+    min-height: 1200px;
+    float: left;
+}
+
+#positon b{
+    color: blue;
+}
+
+#photo-info b{
+    color: blue;
+}
+
+.anh-sapa{
+    height: 400px;
+    width: 750px;
+}
+
+.ct_bang{
+	float: left;
+	width: 100%;
+	padding-top: 55px;
+}
+
+.lt-row{
+    width: 100%;
+    height: 225px;
+    margin-top: 10px; 
+}
+
+.ct-row{
+    min-width: 100%;
+    height: 35px;
+    border: 1px solid gray;
+    float: left;
+}
+
+.row-1{
+    height: 20px;
+    min-width:120px ;
+    float: left;
+    font-size: 18px;
+    padding-top: 7px;
+    padding-left: 10px;
+
+}
+
+.row-2{
+    height: 20px;
+    min-width: 150px;
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+.dat-tour{
+    width: 100%;
+    height: 150px;
+    padding: auto;
+    border: 1px solid gray;
+    background-color: #f7f7f7;
+
+}
+
+.tour-text{
+    min-width: 130px;
+    height: 80px;
+    float: left;
+    margin-top: 15px;
+}
+
+.tour-text span{
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.tour-gia{
+    min-width: 130px;
+    height: 80px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.gia-1{
+    min-width: 100px;
+    height: 30px;
+    color: red;
+    font-size: 20px;
+    font-weight: 800;
+    float: right;
+}
+
+.gia-2{
+    font-size: 14px;
+    min-width: 80px;
+    height: 20px;
+    float: right;
+}
+
+.but{
+	min-width: 250px;
+    height: 30px;
+	margin-left: 30px;
+	
+}
+
+.button-dm{
+	min-width: 200px;
+    height: 30px;
+    background-color: rgb(212, 44, 44);
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    border: #f7f7f7;
+
+}
+
+.Highlights{
+	width: 100%;
+	min-height: 200px;
+	border: 1px solid gray;
+	background-color: #f7f7f7;
+	padding-top: 20px;
+	margin-top: 15px;
+}
+
+.footer{
+	min-height: 300px;
+	width: 100%;
+	background-color: #DDD;
+	float: left;
+}
+
+.communications, .visa-service{
+	width: 100%;
+	min-height: 150px;
+}
+
+.communications label{
+	color: red;
+}
+
+.communications b, .visa-service b, .Contact-Info b{
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.communications li, .visa-service li, .Contact-Info li{
+	line-height: 25px;
+	list-style: none;
+} 
+
+.visa-service label{
+	color: red;
+	font-size: 19px;
+	font-weight: 700;
+}
+
+.Contact-Info, .link{
+	width: 100%;
+	height: 80px;
+}
+
+.Contact-Info a, .link a{
+	width: 15%;
+	height: 30px;
+	float: left;
+}
+
+.Contact-Info img{
+	width: 95%;
+	height: 100%;
+	float: left;
+}
+
+.link li{
+	list-style: none
+}
+
+.btn{
+	height: 40px;
+	width: 40px;
+	margin-top: 30px;
+	border-radius: 100%;
+	margin-left: 10px;
+	margin-top: 20px;
+	
+}
+.btn:hover{
+	box-shadow: 0px 0px 5px 5px #CCC;
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+[class*="col-"]{
+	float: left;
+	padding: 15px;
+	
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* For mobile*/
+@media only screen and (max-width: 768px){	
+	.col-s-1{width: 8.33%;}
+	.col-s-2{width: 16.66%;}
+	.col-s-3{width: 25%;}
+	.col-s-4{width: 33.33%;}
+	.col-s-5{width: 41.66%;}
+	.col-s-6{width: 50%;}
+	.col-s-7{width: 58.33%;}
+	.col-s-8{width: 66.66%;}
+	.col-s-9{width: 75%;}
+	.col-s-10{width: 83.33%;}
+	.col-s-11{width: 91.66%;}
+	.col-s-12{width: 100%;}	
+	
+	#menu{
+		display: none;
+	}
+}
+
+/* For medium devices*/
+@media only screen and (min-width: 768px){	
+	.col-m-1{width: 8.33%;}
+	.col-m-2{width: 16.66%;}
+	.col-m-3{width: 25%;}
+	.col-m-4{width: 33.33%;}
+	.col-m-5{width: 41.66%;}
+	.col-m-6{width: 50%;}
+	.col-m-7{width: 58.33%;}
+	.col-m-8{width: 66.66%;}
+	.col-m-9{width: 75%;}
+	.col-m-10{width: 83.33%;}
+	.col-m-11{width: 91.66%;}
+	.col-m-12{width: 100%;}	
+	
+	#menu{
+		display: none;
+	}
+}
+
+/* For large devices*/
+@media only screen and (min-width: 992px){	
+	.col-1{width: 8.33%;}
+	.col-2{width: 16.66%;}
+	.col-3{width: 25%;}
+	.col-4{width: 33.33%;}
+	.col-5{width: 41.66%;}
+	.col-6{width: 50%;}
+	.col-7{width: 58.33%;}
+	.col-8{width: 66.66%;}
+	.col-9{width: 75%;}
+	.col-10{width: 83.33%;}
+	.col-11{width: 91.66%;}
+	.col-12{width: 100%;}	
+	
+}
+
+
+

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Tour</title>
+      <link rel ='stylesheet' type='text/css' href='../CSS/tour.css'/>
+      <script src="../JS/jquery-3.6.0.min.js"></script>
+      <script src="../JS/tour.js"></script>
+      <script src="../JS/TourThem.js"></script>
+      <script src="../JS/TaoSanPham.js"></script>
+      <script src="../JS/ItemDatHang.js"></script>
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class= "row">
+        <div class ="col-12 col-m-12 col-s-12">
+          <div class="menu">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nhật Lệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tour du lịch</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Việt Nam</a></li>
+                  <li><a class="dropdown-item" href="#">Đông Nam Á</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Á</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Âu</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Mỹ</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Phi</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Úc</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Á</a></li>
+                  <li><a class="dropdown-item" href="#">Tour Tết</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Visa.html">Dịch vụ Visa</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Giới thiệu</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../HTML/GioiThieu.html">Tổng quan công ty</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#">Thông tin liên hệ</a></li>
+                  <!--<li><hr class="dropdown-divider"></li>-->
+                  <li><a class="dropdown-item" href="../HTML/ChinhSach.html">Chính sách bảo mật thông tin</a></li>                    
+                </ul>
+              </li>
+              <a  href="Loign.html">
+                <input class="loign" type="button" value="Đăng nhập" />
+              </a>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class= "row">
+      <div class ="col-12 col-m-12 col-s-12">
+        <div class="photo">
+          <div class="voucher">
+            <img id='imgs' onclick="changeImage" src="../voucher1.jpg"/>
+          </div>
+
+          <div class='avatar'>
+            <div class="search" ><br/>
+              <b>TÌM TOUR HOT THEO ĐỊA DANH, ĐIỂM ĐẾN</b><br/>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Nhập thành phố/ khu du lịch">
+              <datalist id="datalistOptions">
+                <option value="Thái Lan">
+                <option value="Hàn Quốc">
+                <option value="Nhật Bản">
+                <option value="Trung Quốc">
+                <option value="Mỹ">
+                <option value="Nga">
+                <option value="Hà Nội">
+                <option value="Hải Phòng">
+                <option value="Quảng Ninh">
+                <option value="Ninh Bình">
+                <option value="Tây Nguyên">
+                <option value="Đà Lạt">
+                <option value="Thanh Hóa">
+                <option value="TP.Hồ Chí Minh">
+                <option value="Đà Nẵng">
+              </datalist>
+              <label for="exampleDataList" class="form-label">
+                <img class='cart-icon' src ='../icons-search.gif' />
+              </label>
+            </div>
+
+            <div class="place"><br/>
+              <b>TÌM TOUR THEO ĐIỂM KHỞI HÀNH</b><br/>
+              <div class="rows">
+                <div class="row-1">
+                  <input class="row-select" list="datalistOptions1" id="exampleDataList" placeholder="Loại tour">
+                  <datalist id="datalistOptions1">
+                    <option value="Chùm tour tết 2021">
+                    <option value="Tour Free & Easy">
+                    <option value="Tour dã ngoại cuối tuần">
+                    <option value="Tour mạo hiểm, khám phá">
+                    <option value="Tour du lịch biển, đảo">
+                    <option value="Tour lễ hội, mua sắm">
+                    <option value="Tour tuần trăng mật">
+                    <option value="Tour du lịch golf">
+                    <option value="Tour du lịch miền Bắc">
+                    <option value="Tour du lịch miền Nam">
+                    <option value="Tour du lịch miền Trung">
+                    <option value="Tour liên tuyến, xuyên Việt">
+                    
+                  </datalist>
+                </div>
+                
+                <div class="row-2">
+                  <input class="row-select" list="datalistOptions2" id="exampleDataList" placeholder="Khởi hành">
+                  <datalist id="datalistOptions2">
+                    <option value="Hà Nội">
+                    <option value="Hưng Yên">
+                    <option value="Hải Dương">
+                    <option value="TP Hồ Chí Minh">
+                    <option value="Đà Nẵng">
+                    <option value="Quảng Ninh">
+                    <option value="Sơn La">
+                    <option value="Huế">
+                    <option value="Đà Lạt">
+                    <option value="Hải Phòng">
+                    <option value="Hà Nam">
+                    <option value="Nam Định">
+                  </datalist>
+                </div>
+
+                <div class="row-3">
+                  <input class="row-select" list="datalistOptions3" id="exampleDataList" placeholder="Kết thúc">
+                  <datalist id="datalistOptions3">
+                    <option value="Hà Nam">
+                    <option value="Hà Nội">
+                    <option value="Thanh Hóa">
+                    <option value="Nghệ An">
+                    <option value="Nam Định">
+                    <option value="TP Hồ Chí Minh">
+                    <option value="Sơn La">
+                    <option value="Quảng Ninh">
+                    <option value="Đà Nẵng">
+                    <option value="Nha Trang">
+                    <option value="Lào Cai">
+                    <option value="Đà Lạt">
+                    <option value="Quảng Bình">
+                  </datalist>
+                </div>
+
+                <div class="row-4"> 
+                  <input class="button-search" type="button" value="Tìm kiếm"/>
+                </div>
+              </div>  
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class= "row">
+      <section id ="pro">
+        <div class="content">
+          <div class ="col-3 col-m-6 col-s-12 image">
+            <div class="product">
+              <img class="list-img" src='../SAPA.jpg'/>
+              <a href="DatHang.html">Hà Nội - SaPa - Bản Cát Cát 
+                <img class='icon-hot' src="../icon-hot.gif">
+              </a>
+              <label class="price">12.000.000đ </label>
+              <strike>14.560.000đ</strike><br/><br/>
+              <label class="mess" ><b>Khởi hành:</b> Hà Nội</label><br/>
+              <label class="mess"><b>Thời gian:</b>  4 Ngày 3 Đêm</label><br/>
+              <label class="mess" ><b>Ngày đi:</b>  Hàng Ngày</label><br/>
+            </div>
+          </div>
+
+          <div class ="col-3 col-m-6 col-s-12 image">
+            <div class="product">
+              <img class="list-img" src='../NINHBINH.jpg'/>
+              <a href="#">Tour Tràng An - Tam Cốc – Bích Động
+                <img class='icon-hot' src="../icon-hot.gif">
+              </a>
+            
+              <label class="price">12.000.000đ</label>
+              <strike>14.560.000đ</strike><br/><br/>
+              <label class="mess" ><b>Khởi hành:</b> Hà Nội</label><br/>
+              <label class="mess"><b>Thời gian:</b>  4 Ngày 3 Đêm</label><br/>
+              <label class="mess" ><b>Ngày đi:</b>  Hàng Ngày</label><br/>
+              
+            </div>
+
+          </div>
+          <div class ="col-3 col-m-6 col-s-12 image">
+            <div class="product">
+              <img class="list-img" src='../TAMCHUC.jpg'/>
+              <a href="#">Tour du xuân Tam Chúc - Vân Long giá tốt
+                <img class='icon-hot' src="../icon-hot.gif">
+              </a>
+              
+              <label class="price">990.000đ</label>
+              <strike>14.560.000đ</strike><br/><br/>
+              <label class="mess" ><b>Khởi hành:</b> Hà Nội</label><br/>
+              <label class="mess"><b>Thời gian:</b>  4 Ngày 3 Đêm</label><br/>
+              <label class="mess" ><b>Ngày đi:</b>  Hàng Ngày</label><br/> 
+            </div>
+          </div>
+          <div class ="col-3 col-m-6 col-s-12 image">
+            <div class="product">
+              <img class="list-img" src='../QUANGNINH.jpg'/>
+              <a href="#">Tour du lịch Quảng Ninh - Cát Bà
+                <img class='icon-hot' src="../icon-hot.gif">
+              </a>
+              
+              <label class="price">1.700.000đ</label>
+            </div>
+          </div>
+          <div class ="col-3 col-m-6 col-s-12 image">
+            <div class="product">
+              <img class="list-img" src='../DANANG.jpg'/>
+              <a href="#">Tour Đà Nẵng - Bà Nà - Phố Cổ - Hôi An
+                <img class='icon-hot' src="../icon-hot.gif">
+              </a>
+            
+              <label class="price">7.000.000đ</label>
+              <strike>14.560.000đ</strike><br/><br/>
+              <label class="mess" ><b>Khởi hành:</b> Hà Nội</label><br/>
+              <label class="mess"><b>Thời gian:</b>  4 Ngày 3 Đêm</label><br/>
+              <label class="mess" ><b>Ngày đi:</b>  Hàng Ngày</label><br/>
+              
+            </div>
+          </div>
+          <div class ="col-3 col-m-6 col-s-12 image">
+            <div class="product">
+              <img class="list-img" src='../HUE.jpg'/>
+              <a href="#">Tour Huế - Cung Đình - Biển Lăng Cô
+                <img class='icon-hot' src="../icon-hot.gif">
+              </a>
+              <label class="price">6.000.000đ</label>
+              <strike>14.560.000đ</strike><br/><br/>
+              <label class="mess" ><b>Khởi hành:</b> Hà Nội</label><br/>
+              <label class="mess"><b>Thời gian:</b>  4 Ngày 3 Đêm</label><br/>
+              <label class="mess" ><b>Ngày đi:</b>  Hàng Ngày</label><br/>
+              
+            </div>
+          </div>
+          <div class ="col-3 col-m-6 col-s-12 image">
+            <div class="product">
+              <img class="list-img" src='../QUANGBINH.jpg'/>
+              <a href="#">Tour Phong Nha Kẻ Bàng - Sông Chày – Hang Tối
+                <img class='icon-hot' src="../icon-hot.gif">
+              </a>
+              
+              <label class="price">5.000.000đ</label>
+              <strike>14.560.000đ</strike><br/><br/>
+              <label class="mess" ><b>Khởi hành:</b> Hà Nội</label><br/>
+              <label class="mess"><b>Thời gian:</b>  4 Ngày 3 Đêm</label><br/>
+              <label class="mess" ><b>Ngày đi:</b>  Hàng Ngày</label><br/>
+              
+            </div>
+          </div>
+          <div class ="col-3 col-m-6 col-s-12 image">
+            <div class="product">
+              <img class="list-img" src='../NHATRANG.jpg'/>
+              <a href="#">Tour du lịch biển Nha Trang
+                <img class='icon-hot' src="../icon-hot.gif">
+              </a>
+              
+              <label class="price">9.000.000đ</label>
+              <strike>14.560.000đ</strike><br/><br/>
+              <label class="mess" ><b>Khởi hành:</b>Hà Nội</label><br/>
+              <label class="mess"><b>Thời gian:</b>4 Ngày 3 Đêm</label><br/>
+              <label class="mess" ><b>Ngày đi:</b>Hàng Ngày</label><br/>
+              
+            </div>
+          </div>
+          <div class ="col-3 col-m-6 col-s-12 image">
+            <div class="product">
+              <img class="list-img" src='../HANOI.jpg'/>
+              <a href="#">Tour Hà Nội - Phố cổ - Cầu Thê Húc 
+                <img class='icon-hot' src="../icon-hot.gif">
+              </a>
+              
+              <label class="price">1.000.000đ</label>
+              <strike>14.560.000đ</strike><br/><br/>
+                <label class="mess" ><b>Khởi hành:</b> Hà Nội</label><br/>
+                <label class="mess"><b>Thời gian:</b>  4 Ngày 3 Đêm</label><br/>
+                <label class="mess" ><b>Ngày đi:</b>  Hàng Ngày</label><br/>
+            </div>
+          </div>
+          <div style="clear: both"></div>		
+        </div>
+      </section>
+    </div>
+    <div class="row">
+      <div class="footer"> 
+        <div class ="col-12 col-m-12 col-s-12 image">
+        <div class ="col-4 col-m-6 col-s-12 image">
+          <div class="communications">
+            <ul>
+              <li>
+                <b>Về chúng tôi</b>
+              </li>
+              <li>
+                <a>Công ty TNHH Du lịch Nhật Lệ</a>
+              </li>
+              <li>
+                <a> Số tài khoản: <lable>0591000418978</lable></a>
+              </li>
+              <li>
+                <a>Ngân hàng VietComBank chi nhánh Mỹ Hào, Hưng Yên</a>
+              </li>
+              <li>
+                <a>Giấy phép ĐKKD: 0310196296</a>
+              </li>
+              <li>
+                <a>Giấy phép Lữ hành Quốc tế 79-770/2017/TCDL-GP LHQT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class ="col-4 col-m-6 col-s-12 image">
+          <div class="visa-service ">
+            <ul>
+              <li><b>Dịch vụ du lịch</b>
+              </li>
+              <li>
+                <a>Á Châu là dịch vụ Visa quốc tế đi hơn 190 quốc gia. Hãy để chúng tôi xin visa nhanh cho bạn.</a>
+              </li>
+              <li>
+                <a><label>03.88.9999.88</label> Tư vấn du lịch </a>
+              </li>
+              <li>
+                <a><label>0999.666.999</label> Tư vấn visa </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class ="col-4 col-m-6 col-s-12 image">
+          <div class="Contact-Info">
+            <ul>
+              <li><b>Liên kết </b></li>
+              <li>
+                <a><img src="../Paypal.jpg" /></a>
+              </li>
+              <li>
+                <a><img src="../VisaCard.png" /></a>
+              </li>
+              <li>
+                <a><img src="../Matertro.jpg" /></a>
+              </li>
+              <li>
+                <a><img src="../Discover.png" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="link"> 
+            <ul>
+              <li><b>Nền tảng khác</b></li>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100006094397426">
+                  <input class="btn" type="image" src="../icons-facebook.gif" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/">
+                  <input class="btn" type="image" src="../icons-mess.gif" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <input class="btn" type="image" src="../icons-inta.gif" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.skype.com/en/">
+                  <input class="btn" type="image" src="../icons-skype.gif" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <input class="btn" type="image" src="../icons-twitter.gif" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+     // console.log(onClickDuaVaoHeQuanTri());
+      //1.lấy danh sách tour dưới localstorage 
+      var jsonDanhSachTour = localStorage.getItem('danhsachTour');
+      var danhsachTour = JSON.parse(jsonDanhSachTour);
+      console.log(danhsachTour);
+
+      //2. chuyển danh sách đối tượng tour sang đoạn HTML
+      var HTML = ChuyenDanhSachDoiTuongSanPhamThanhHTML(danhsachTour);
+
+      //3. gắn đoạn HTML đó vào section pro
+      var nodeTour = document.getElementById('pro');
+      nodeTour.innerHTML = HTML;
+    </script>
+  </body>
+</html>

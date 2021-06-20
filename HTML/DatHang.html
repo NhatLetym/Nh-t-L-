@@ -1,0 +1,437 @@
+<html>
+  <head><title>Đặt hàng</title>
+    <link rel="stylesheet" href="../CSS/DatHang.css">
+    <script src="../JS/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="../JS/DatHang.js"></script>
+    <script src="../JS/TaoSanPham.js"></script>
+    <script src="../JS/TourThem.js"></script>
+    <script src="../JS/Item.js"></script>
+  </head>
+  
+  <body>
+    <div class="container">
+      
+          <div class="menu">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nhật Lệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Tour.html">Trang chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tour du lịch</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Việt Nam</a></li>
+                  <li><a class="dropdown-item" href="#">Đông Nam Á</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Á</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Âu</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Mỹ</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Phi</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Úc</a></li>
+                  <li><a class="dropdown-item" href="#">Châu Á</a></li>
+                  <li><a class="dropdown-item" href="#">Tour Tết</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dịch vụ Visa</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Giới thiệu</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tổng quan công ty</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#">Thông tin liên hệ</a></li>
+                  <!--<li><hr class="dropdown-divider"></li>-->
+                  <li><a class="dropdown-item" href="#">Chính sách bảo mật thông tin</a></li>                    
+                </ul>
+              </li>
+              <a  href="Loign.html">
+                <input class="loign" type="button" value="Đăng nhập" />
+              </a>
+            </ul>   
+          </div>
+        </div>
+      
+    <div class="photo">
+      <div class= "row">
+        <div class='avatar'>
+          <div class ="col-6 col-m-6 col-s-12 image">
+            <div class="search" ><br/>
+              <b>TÌM TOUR HOT THEO ĐỊA DANH, ĐIỂM ĐẾN</b><br/>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Nhập thành phố/ khu du lịch">
+              <datalist id="datalistOptions">
+                <option value="Thái Lan">
+                <option value="Hàn Quốc">
+                <option value="Nhật Bản">
+                <option value="Trung Quốc">
+                <option value="Mỹ">
+                <option value="Nga">
+                <option value="Hà Nội">
+                <option value="Hải Phòng">
+                <option value="Quảng Ninh">
+                <option value="Ninh Bình">
+                <option value="Tây Nguyên">
+                <option value="Đà Lạt">
+                <option value="Thanh Hóa">
+                <option value="TP.Hồ Chí Minh">
+                <option value="Đà Nẵng">
+              </datalist>
+              <label for="exampleDataList" class="form-label">
+                <img class='cart-icon' src ='../icons-search.gif' />
+              </label>
+            </div>
+          </div>
+
+          <div class ="col-6 col-m-6 col-s-12 image">
+            <div class="place"><br/>
+              <b>TÌM TOUR THEO ĐIỂM KHỞI HÀNH</b><br/>
+              <div class="rows">
+                <div class="rows-1">
+                  <input class="row-select" list="datalistOptions1" id="exampleDataList" placeholder="Loại tour">
+                  <datalist id="datalistOptions1">
+                    <option value="Chùm tour tết 2021">
+                    <option value="Tour Free & Easy">
+                    <option value="Tour dã ngoại cuối tuần">
+                    <option value="Tour mạo hiểm, khám phá">
+                    <option value="Tour du lịch biển, đảo">
+                    <option value="Tour lễ hội, mua sắm">
+                    <option value="Tour tuần trăng mật">
+                    <option value="Tour du lịch golf">
+                    <option value="Tour du lịch miền Bắc">
+                    <option value="Tour du lịch miền Nam">
+                    <option value="Tour du lịch miền Trung">
+                    <option value="Tour liên tuyến, xuyên Việt">
+                    
+                  </datalist>
+                </div>
+                
+                <div class="rows-2">
+                  <input class="row-select" list="datalistOptions2" id="exampleDataList" placeholder="Khởi hành">
+                  <datalist id="datalistOptions2">
+                    <option value="Hà Nội">
+                    <option value="Hưng Yên">
+                    <option value="Hải Dương">
+                    <option value="TP Hồ Chí Minh">
+                    <option value="Đà Nẵng">
+                    <option value="Quảng Ninh">
+                    <option value="Sơn La">
+                    <option value="Huế">
+                    <option value="Đà Lạt">
+                    <option value="Hải Phòng">
+                    <option value="Hà Nam">
+                    <option value="Nam Định">
+                  </datalist>
+                </div>
+
+                <div class="rows-3">
+                  <input class="row-select" list="datalistOptions3" id="exampleDataList" placeholder="Kết thúc">
+                  <datalist id="datalistOptions3">
+                    <option value="Hà Nam">
+                    <option value="Hà Nội">
+                    <option value="Thanh Hóa">
+                    <option value="Nghệ An">
+                    <option value="Nam Định">
+                    <option value="TP Hồ Chí Minh">
+                    <option value="Sơn La">
+                    <option value="Quảng Ninh">
+                    <option value="Đà Nẵng">
+                    <option value="Nha Trang">
+                    <option value="Lào Cai">
+                    <option value="Đà Lạt">
+                    <option value="Quảng Bình">
+                  </datalist>
+                </div>
+
+                <div class="rows-4"> 
+                  <input class="button-search" type="button" value="Tìm kiếm"/>
+                </div>
+              </div>  
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="main">
+      <div id="chi-tiet">
+        <div class= "row">
+          <div class ="col-9 col-m-8 col-s-12 image">
+            <div class="ct">
+              <div class="gioi-thieu">
+                <div class="a">
+                    <h2 class="title">Du lịch Phú Quốc: Hà Nội - SaPa (3 Ngày 2 Đêm)</h2>
+                    <img src="../SAPA.jpg" class="anh">
+                </div>                   
+                <div class="lich-trinh-gt">
+                    <ul class="lich-trinh-gt-ul">
+                        <li class="lich-trinh-gt-li" id="lich-trinh-1" onclick="positons()" ><a href="#positon" ><span>LỊCH TRÌNH VÀ GIÁ TOUR</span></a></li>
+                        <li class="lich-trinh-gt-li" id="lich-trinh-2"  onclick="photoinfos()"><a href="#photo-info"><span>GIỚI THIỆU ĐIỂM ĐẾN</span></a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="thong-tin">
+            <div id="positon" >
+              <p>
+                <b>NGÀY 01: HÀ NỘI – ĐẢO NGỌC CÁT BÀ (Ăn trưa, tối)</b></br>
+  
+                Sáng 07h00 Xe và hướng dẫn viên đón Quý khách tại Rạp xiếc Trung Ương, khởi hành đi Đảo Cát Bà. Quý khách nghỉ ngơi trên đường đi. Đoàn băng qua cầu Cầu Tân Vũ - Lạch Huyện là cây cầu vượt biển dài nhất Việt Nam nối Đình Vũ với huyện đảo Cát Hải của thành phố Hải Phòng.
+  
+                Quý khách lên phà Gót ra đảo Cát Bà. 
+                Đến Đảo Ngọc, Quý khách ăn trưa, sau đó về khách sạn nhận phòng, nghỉ ngơi. (Theo quy định của khách sạn nhận phòng sau 12h trưa, nếu có phòng sẽ lấy sớm cho quý khách).<br/>
+                Chiều: Quý khách tự do vui chơi, tắm biển tại Cát Bà. 
+  
+                Check-in đường ven biển đẹp nhất Cát Bà: Quý khách có thể di chuyển đến bãi Cát Cò để thăm quan và tự do chụp ảnh con đường ven biển đẹp nhất Cát Bà. 
+                Đoàn tự do tắm biển, chụp ảnh và ngắm cảnh hoàng hôn tuyệt đẹp trên đảo.</br>
+                Tối: Quý khách ăn tối tại nhà hàng của khách sạn. Buổi tối quý khách tự do đi ngắm Cát bà về đêm, hoặc ra bè thưởng thức hải sản tươi sống...
+              </p>
+              <p>
+                <b>NGÀY 02: KHÁM PHÁ VỊNH LAN HẠ - KAYAKING – ĐẢO KHỈ - TẮM BIỂN (Ăn ba bữa)</b></br>
+  
+                Sáng: Ăn sáng tại khách sạn. 
+  
+                08h15 Đoàn khởi hành đi thăm Vịnh Lan Hạ. Quý khách lên thuyền thăm Vịnh, tận hưởng khung cảnh thiên nhiên hùng vĩ.
+  
+                Thuyền đưa Quý khách qua làng chài Cái Bèo và nhiều hòn đảo tự nhiên trong quần thể Vịnh Lan Hạ. Quý khách có thể lưu giữ cho mình những bức ảnh tuyệt đẹp.
+                Thuyền tới khu vực Hang Sáng – Hang Tối, tại đây, đoàn nhận áo phao, mái chèo, Quý khách chèo thuyền xuyên qua các hang động, Hang Sáng khá rộng với nhiều nhũ đá bên trên, trong hang luôn có 2 dòng chảy từ trong ra ngoài. Đi xuyên qua hang Sáng quý khách sẽ tới 1 thung lũng nằm trên biển, bao quanh là các dãy núi cao. Khung cảnh như lạc vào Thiên Đường. Đoàn có thể dừng tại đây là nghỉ ngơi, tận hưởng không khí thiên nhiên hoang dã.
+                Đoàn ăn trưa trên thuyền lớn. Trong thời gian đó thuyền di chuyển đến Đảo Ba Trái Đào hoặc đảo Vạn Bội.
+                Tại Đảo Ba Trái Đào hoặc Vạn Bội quý khách có cơ hội tham gia hoạt động tắm biển, nghỉ ngơi thư giãn…
+                Tàu đưa đoàn di chuyển về khu vực Đảo Khỉ. Tại đây Quý khách tự do leo núi khám phá đảo Khỉ – từ đỉnh núi đoàn có cơ hội ngắm nhìn toàn bộ Vịnh Lan Hạ, thu hẹp trong tầm mắt. Hoặc tự do tắm biển, nghỉ ngơi.
+                Quý khách quay về lại bến Cái Bèo, về lại trung tâm thị trấn Cát Bà, Quý khách tự do tắm biển Cát Cò hoặc nghỉ ngơi tại khách sạn.<br/>
+                Tối: Quý khách ăn tối tại khách sạn và tự do khám phá phố biển về đêm. Nghỉ đêm tại khách sạn.
+              </p>
+              <p>
+                <b>NGÀY 03: ĐẢO CÁT BÀ –  HÀ NỘI (Ăn sáng, trưa)</b></br>
+  
+                Sáng: Quý khách ăn sáng tại khách sạn. Đoàn tự do tắm biển, dạo chơi (chi phí tự túc).
+  
+                09h30, Quý khách trả phòng, xe đưa Quý khách đến Trung tâm đặc sản Cát Bà. Tại đây, Quý khách có thể có cơ hội trải nghiệm thực tế làm chả cá truyền thống. Quý khách có thể tự tay làm những miếng chả cá thơm ngon chuẩn vị Cát Bà. (lưu ý lớp học chả cá tùy theo lịch sắp xếp của trung tâm)
+  
+                Đoàn tự do thăm quan, mua sắm trong trung tâm đặc sản.<br/>
+  
+                Trưa: Quý khách ăn trưa, sau đó ra bến phà Gót để trở về Hà Nội.<br/>
+  
+                Chiều: Xe đưa Quý khách trở lại điểm hẹn ban đầu tại Thành phố. Kết thúc chường trình tour, tạm biệt và hẹn gặp lại Quý khách!
+              </p>
+  
+              </div>
+              <div id="photo-info" style="display: none;">
+                <p>
+                  <b>KHÁM PHÁ THIÊN ĐƯỜNG DU LỊCH SAPA</b><br/>
+                  Du lịch Sapa từ lâu đã trở thành địa điểm du lịch nổi tiếng miền Bắc, thu hút hàng ngàn bước chân du khách đến thăm quan.  Vẻ đẹp nơi đây là sự hòa quyện giữ thiên nhiên núi rừng cùng văn hóa phong tục mang đậm bản sắc dân tộc. Du khách đến đây sẽ được tận hưởng những giây phút tuyệt vời trọng bầu không khí trong lành, thoáng đãng. 
+                  Tour du lịch Sapa 4 ngày sẽ đưa du khách khám phá vùng đất đươc mệnh danh là " thành phố trên mây" này. Hãy nhanh tay đặt tour để cảm nhận nhé!
+                </p>
+                <img src="../SAPA1.jpg" class="anh-sapa">
+                <P>
+  
+                </P>
+                <img src="../SAPA2.jpg" class="anh-sapa">
+                <P>
+  
+                </P>
+                <img src="../SAPA3.jpg" class="anh-sapa">
+                <P>
+  
+                </P>
+            </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class ="col-3 col-m-4 col-s-12 image">
+            <div id="phai">
+              <div class="ct_bang">
+                <div class="lt-row">
+                  <div class="ct-row">
+                      <div class="row-1">Mã tour:</div>
+                      <div class="row-2">ID3180</div>
+                  </div>
+                  <div class="ct-row">
+                      <div class="row-1">Khởi hành:</div>
+                      <div class="row-2">Hà Nội</div>
+                  </div>
+                  <div class="ct-row">
+                      <div class="row-1">Điểm đến:</div>
+                      <div class="row-2">SaPa</div>
+                  </div>
+                  <div class="ct-row">
+                      <div class="row-1">Thời gian:</div>
+                      <div class="row-2">3 ngày 2 đêm</div>
+                  </div>
+                  <div class="ct-row">
+                      <div class="row-1">Ngày đi:</div>
+                      <div class="row-2">Hằng Ngày</div>
+                  </div>
+                  <div class="ct-row">
+                      <div class="row-1">Phương tiện:</div>
+                      <div class="row-2">ID3180</div>
+                  </div>
+                </div>
+                <div class="dat-tour">
+                  <div class="tour-text"><span>Giá người lớn</span></div>
+                  <div class="tour-gia">
+                    <div class="gia-1"><span style="float:right">2.180.000</span></div>
+                    <div class="gia-2"><strike style="float:right">4.480.000</strike></div>
+                  </div>
+                  <div class="but">
+                    <a href="Giohang.html">
+                      <input type="button"  class="button-dm" value="ĐẶT TOUR">
+                    </a>
+                  </div>
+                </div>
+                <div class="Highlights">
+                  <div class="Highlights-text"><b>Điểm nổi bật</b>
+                    <ul>
+                      <li><a>Vé máy bay khứ hồi Sài Gòn - Hà Nội</a></li>
+                      <li><a>Khám phá những địa danh nổi tiếng ở Hà Nội</a></li>
+                      <li><a>Nghỉ khách sạn 3* trung tâm, tiện nghi, sang trọng</a></li>
+                      <li><a>Chiêm ngưỡng vẻ đẹp thơ mộng của Sapa</a></li>
+                      <li><a>Thăm chùa Bãi Đính - Ngôi chùa lớn nhất Đông Nam Á</a></li>
+                      <li><a>Thưởng thức nhiều món đặc sản nổi tiếng ở Ninh Bình</a></li>
+                      <li><a>HDV nhiệt tình theo đoàn suốt tuyến</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer"> 
+        <div class ="col-12 col-m-12 col-s-12 image">
+        <div class ="col-4 col-m-6 col-s-12 image">
+          <div class="communications">
+            <ul>
+              <li>
+                <b>Về chúng tôi</b>
+              </li>
+              <li>
+                <a>Công ty TNHH Du lịch Nhật Lệ</a>
+              </li>
+              <li>
+                <a> Số tài khoản: <lable>0591000418978</lable></a>
+              </li>
+              <li>
+                <a>Ngân hàng VietComBank chi nhánh Mỹ Hào, Hưng Yên</a>
+              </li>
+              <li>
+                <a>Giấy phép ĐKKD: 0310196296</a>
+              </li>
+              <li>
+                <a>Giấy phép Lữ hành Quốc tế 79-770/2017/TCDL-GP LHQT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class ="col-4 col-m-6 col-s-12 image">
+          <div class="visa-service ">
+            <ul>
+              <li><b>Dịch vụ du lịch</b>
+              </li>
+              <li>
+                <a>Á Châu là dịch vụ Visa quốc tế đi hơn 190 quốc gia. Hãy để chúng tôi xin visa nhanh cho bạn.</a>
+              </li>
+              <li>
+                <a><label>03.88.9999.88</label> Tư vấn du lịch </a>
+              </li>
+              <li>
+                <a><label>0999.666.999</label> Tư vấn visa </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class ="col-4 col-m-6 col-s-12 image">
+          <div class="Contact-Info">
+            <ul>
+              <li><b>Liên kết </b></li>
+              <li>
+                <a><img src="../Paypal.jpg" /></a>
+              </li>
+              <li>
+                <a><img src="../VisaCard.png" /></a>
+              </li>
+              <li>
+                <a><img src="../Matertro.jpg" /></a>
+              </li>
+              <li>
+                <a><img src="../Discover.png" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="link"> 
+            <ul>
+              <li><b>Nền tảng khác</b></li>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100006094397426">
+                  <input class="btn" type="image" src="../icons-facebook.gif" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/">
+                  <input class="btn" type="image" src="../icons-mess.gif" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <input class="btn"  type="image" src="../icons-inta.gif" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.skype.com/en/">
+                  <input class="btn" type="image" src="../icons-skype.gif" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <input class="btn" type="image" src="../icons-twitter.gif" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function onClickDuaVaoHeQuanTri(idTour){
+        alert('id tour '+idTour);
+
+        //2. xây dựng hàm tạo nhanh đối tượng item giỏ hàng
+
+        //3. lấy thông tin có trong local lên
+        var danhsachItem = LaydanhsachTourduoiLocalStorage();
+
+        //2. chuyển danh sách item đặt hàng thành html
+        var HTML = ChuyenDanhSachItemsangHTML(danhsachItem);
+        console.log(HTML);
+
+        //3. truy cập node đặt hàng để hiển thị html danh sách đặt hàng
+        var nodeHQT = document.getElementById('content-left');
+        nodeHQT.innerHTML = HTML;
+        //4.nếu tour tồn tại trong đặt hàng thì tăng số lượng lên
+        //var coTonTaitrongDanhSachItemDatHang = false
+        // for (var i=0; i<danhsachItem.length; i++){
+        //   var itemDatHangHienTai  = danhsachItem[i];
+        //   if(itemDatHangHienTai.idTour == idTour){
+            
+        //     danhsachItem[i].soluong++;
+        //     coTonTaitrongDanhSachItemDatHang = true;
+        //   }
+        // }
+
+        //nếu không tồn tại => tạo ra đối tượng và thêm vào danh sách đặt hàng 
+        // if(coTonTaitrongDanhSachItemDatHang == false){
+        //   var itemDatHang = TaoDoiTuongItemDatHang(idTour, 1);
+        //   danhsachItem.push(itemDatHang);
+        // }
+
+        //5. nếu sản phẩm chưa tồn tại trong đặt thì thêm mới một item vào đặt hàng
+        //luuDanhSachItemGioHangvaoLocalStorage(danhsachItem);
+      } 
+
+    </script> 
+  </body>
+</html>

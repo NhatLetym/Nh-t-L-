@@ -1,0 +1,32 @@
+body{
+    background-color: #ccc;
+}
+.them-moi-san-pham{
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    background-color: white;
+    padding-left: 50px;
+}
+
+.them-moi-san-pham input{
+    height: 30px;
+    width: 400px;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+
+
+h2{
+    padding-top: 20px;
+}
+
+.them-moi-san-pham button{
+    margin-top: 10px;
+    float: right;
+    margin-right: 95px;
+    background-color: tomato;
+    height: 30px;
+    width: 150px;
+}
+
